@@ -1,28 +1,43 @@
 // Navigation code here
-.navigation {
+
+.nav-area {
   display: flex;
   flex-direction: column;
-  .set-desktop-width();
+  align-items: center;
 
-  h1 {
-    text-align: center;
-    font-size: 4rem;
-    margin: 10px 0;
+  .outer-navbar {
+    width: 100%;
+    background-color: @footer-background;
+    border: 1px double #e0e0e0;
   }
 
-  nav {
+  .navigation {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    .set-desktop-width();
 
-    a {
-      font-size: 1.6rem;
-      text-decoration: none;
-      color: @nav-font;
-      margin: 10px 15px;
+    h1 {
+      text-align: center;
+      font-size: 4rem;
+      margin: 10px 0;
     }
+
+    nav {
+      display: flex;
+      justify-content: center;
+
+      a {
+        font-size: 1.6rem;
+        text-decoration: none;
+        color: @nav-font;
+        margin: 10px 15px;
+      }
+    }
+
   }
 
-  img {
+  .main-header-img {
+    .set-desktop-width();
     border-radius: 5px;
   }
 }

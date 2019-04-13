@@ -160,29 +160,42 @@ p {
   margin: 0 auto;
   width: 100%;
 }
-.navigation {
+.nav-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-area .outer-navbar {
+  width: 100%;
+  background-color: #F6F6F6;
+  border: 1px double #e0e0e0;
+}
+.nav-area .navigation {
   display: flex;
   flex-direction: column;
   max-width: 800px;
   margin: 0 auto;
   width: 100%;
 }
-.navigation h1 {
+.nav-area .navigation h1 {
   text-align: center;
   font-size: 4rem;
   margin: 10px 0;
 }
-.navigation nav {
+.nav-area .navigation nav {
   display: flex;
   justify-content: center;
 }
-.navigation nav a {
+.nav-area .navigation nav a {
   font-size: 1.6rem;
   text-decoration: none;
   color: #454A59;
   margin: 10px 15px;
 }
-.navigation img {
+.nav-area .main-header-img {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
   border-radius: 5px;
 }
 footer {
