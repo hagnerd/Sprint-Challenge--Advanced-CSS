@@ -58,7 +58,11 @@
       }
 
       .btn {
+        cursor: pointer;
         .signup-btn(@btn-bg-color; white);
+        &:hover {
+          .signup-btn(white; @btn-bg-color;);
+        }
       }
     }
 
