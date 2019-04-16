@@ -34,13 +34,42 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive websites program around breakpoints i.e. desktop, tablet, and mobile,
+but fully reponsive websites will combine adaptive designs with fluid designs,
+making the content look good at the spaces between the breakpoints, as well as
+at the breakpoints themselves.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first means using min-width media queries, starting at the mobile design
+first, and then progressively working your way up until the final largest
+design, typically desktop.
+
+Desktop first means using max-width media queries, starting at the largest
+design, typically desktop, and then moving progressively smaller towards mobile.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+Setting the root font size to 62.5% makes the root font size essentially 10px by
+default, so that when you use rem units you can just multiply the rem unit by 10
+to get the font size. i.e. 1.5rem becomes 15px, and 2.6rem becomes 26px.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing focuses on developer experience when writing CSS. It provides
+additional functionality, like the ability to nest to show direct hierarchical
+relationship with child selectors, the ability to use variables, and even make
+consumable classes that accept parameters (mixins and parametric mixins).
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite part of preprocessing is being able to modularize my CSS, separating
+out unrelated stles, or units of design into their own files for easier
+maintainability.
+
+There isn't anything that gives me trouble anymore. I remember being somewhat
+confused about mixins, and parametric mixins when I was learning Sass for the
+first time, because I was still new to programming in general at that point.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
